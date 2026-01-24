@@ -1,0 +1,13 @@
+references:
+  - "https://en.wikipedia.org/wiki/Nissan_Titan"
+
+generations:
+  - name: "First Generation (A60)"
+    start_year: 2004
+    end_year: 2015
+    description: "The first generation Nissan Titan was produced from 2004 to 2015, featuring a 5.6L V8 engine with 317-385 hp depending on model year. Available in King Cab (extended cab) and Crew Cab configurations with 2WD or 4WD. An intermediate refresh occurred in 2008 with styling and dimensional updates."
+
+  - name: "Second Generation (A61)"
+    start_year: 2016
+    end_year: 2024
+    description: "The second generation Titan was produced from 2016 to 2024 (ended November 2024). Available in three cab styles: regular cab (2016-2019), King Cab, and Crew Cab. Featured a 5.6L V8 gasoline engine (390-400 hp), and a 5.0L Cummins turbo-diesel option (2016-2019). An intermediate refresh in 2020 introduced a 9-speed transmission, updated styling, and the discontinuation of the regular cab and diesel engine. The lineup transitioned from heavy-duty (XD) to standard configurations."
