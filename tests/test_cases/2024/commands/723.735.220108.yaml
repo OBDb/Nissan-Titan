@@ -1,0 +1,11 @@
+command_id: 723.735.220108
+test_cases:
+- expected_values:
+    TITAN_RADAR_SPEED: 0
+  response: '735056201080000'
+- expected_values:
+    TITAN_RADAR_SPEED: -25.7
+  response: 73505620108FEFF
+- expected_values:
+    TITAN_RADAR_SPEED: -25.6
+  response: 73505620108FF00

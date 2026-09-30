@@ -1,0 +1,16 @@
+command_id: 723.735.220107
+test_cases:
+- expected_values:
+    TITAN_RADAR_DISTANCE: 0
+  response: '735056201070000'
+- expected_values:
+    TITAN_RADAR_DISTANCE: 25.4
+  response: 7350562010700FE
+- expected_values:
+    TITAN_RADAR_DISTANCE: 98
+  response: |-
+    7350562010702C7
+    7350562010703D4
+- expected_values:
+    TITAN_RADAR_DISTANCE: 77.2
+  response: '735056201070304'
