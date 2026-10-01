@@ -1,0 +1,16 @@
+command_id: 723.735.220110
+test_cases:
+- expected_values:
+    TITAN_STEER_ANGLE: 0
+  response: '735056201100000'
+- expected_values:
+    TITAN_STEER_ANGLE: 3.6
+  response: |-
+    735056201100019
+    735056201100024
+- expected_values:
+    TITAN_STEER_ANGLE: -22.8
+  response: 73505620110FF1C
+- expected_values:
+    TITAN_STEER_ANGLE: -0.1
+  response: 73505620110FFFF

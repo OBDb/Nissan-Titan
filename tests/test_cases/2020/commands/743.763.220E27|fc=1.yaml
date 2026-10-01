@@ -1,0 +1,8 @@
+command_id: 743.763.220E27|fc=1
+test_cases:
+- expected_values:
+    TITAN_TP_RR: 35.5
+  response: '76304620E2747'
+- expected_values:
+    TITAN_TP_RR: 42.5
+  response: '76304620E2755'

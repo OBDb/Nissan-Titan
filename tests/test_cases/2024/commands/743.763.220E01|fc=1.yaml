@@ -1,0 +1,14 @@
+command_id: 743.763.220E01|fc=1
+test_cases:
+- expected_values:
+    TITAN_ODO: 78890
+  response: 76306620E01001ED1
+- expected_values:
+    TITAN_ODO: 79350
+  response: 76306620E01001EFF
+- expected_values:
+    TITAN_ODO: 79360
+  response: 76306620E01001F00
+- expected_values:
+    TITAN_ODO: 102400
+  response: '76306620E01002800'

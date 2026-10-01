@@ -1,0 +1,8 @@
+command_id: 740.760.221115
+test_cases:
+- expected_values:
+    TITAN_APP: 0
+  response: '7600462111500'
+- expected_values:
+    TITAN_APP: 48
+  response: '7600462111560'
