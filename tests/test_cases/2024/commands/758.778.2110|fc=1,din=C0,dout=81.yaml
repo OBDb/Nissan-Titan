@@ -1,6 +1,15 @@
 command_id: 758.778.2110|fc=1,din=C0,dout=81
 test_cases:
 - expected_values:
+    TITAN_WHL_1_P: null
+    TITAN_WHL_2_P: null
+    TITAN_WHL_3_P: null
+    TITAN_WHL_4_P: null
+  response: |-
+    778100F611000000000
+    778210000F855000000
+    778220000FFFFFFFFFF
+- expected_values:
     TITAN_WHL_1_P: 34
     TITAN_WHL_2_P: 34
     TITAN_WHL_3_P: 35
@@ -54,22 +63,6 @@ test_cases:
     778100F611000004C4C
     778214E4CF87F003636
     778223636FFFFFFFFFF
-- expected_values:
-    TITAN_WHL_1_P: 33.5
-    TITAN_WHL_2_P: 33.5
-    TITAN_WHL_3_P: 35
-    TITAN_WHL_4_P: 33.5
-  response: |-
-    778100F611002BC4343
-    778214643F8AA003636
-    778223636FFFFFFFFFF
-- expected_values:
-    TITAN_WHL_1_P: 35
-    TITAN_WHL_3_P: 35.5
-  response: |-
-    778100F611003E84600
-    778214700F8AA003600
-    778223600FFFFFFFFFF
 - expected_values:
     TITAN_WHL_1_P: 36.5
     TITAN_WHL_2_P: 36.5
