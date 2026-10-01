@@ -1,0 +1,16 @@
+command_id: 723.735.220101
+test_cases:
+- expected_values:
+    TITAN_YAW_RATE: 0
+  response: '735056201010000'
+- expected_values:
+    TITAN_YAW_RATE: 0.4
+  response: |-
+    735056201010004
+    735056201010004
+- expected_values:
+    TITAN_YAW_RATE: -20.4
+  response: 73505620101FF34
+- expected_values:
+    TITAN_YAW_RATE: -0.2
+  response: 73505620101FFFE

@@ -1,0 +1,8 @@
+command_id: 740.760.221209
+test_cases:
+- expected_values:
+    TITAN_BRAKE_MC_P: 0
+  response: '760056212090000'
+- expected_values:
+    TITAN_BRAKE_MC_P: 54.03646
+  response: '760056212090053'

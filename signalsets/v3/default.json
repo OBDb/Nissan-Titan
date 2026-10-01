@@ -1,4 +1,97 @@
 { "commands": [
-
+{ "hdr": "707", "rax": "727", "cmd": {"22": "0103"}, "freq": 0.25, "dbgfilter": { "to": 2019, "years": [2022, 2023] },
+  "signals": [
+    {"id": "TITAN_TURN_SIGNAL_RIGHT", "path": "Control", "fmt": {          "len": 1, "max": 1, "unit": "offon" }, "name": "Right turn signal"},
+    {"id": "TITAN_TURN_SIGNAL_LEFT",  "path": "Control", "fmt": {"bix": 1, "len": 1, "max": 1, "unit": "offon" }, "name": "Left turn signal"}
+  ]},
+{ "hdr": "723", "rax": "735", "cmd": {"22": "0101"}, "freq": 0.25, "dbgfilter": { "to": 2019, "years": [2022, 2023] },
+  "signals": [
+    {"id": "TITAN_YAW_RATE", "path": "Control", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "degrees" }, "name": "Yaw rate"}
+  ]},
+{ "hdr": "723", "rax": "735", "cmd": {"22": "0107"}, "freq": 0.25, "dbgfilter": { "to": 2019, "years": [2022, 2023] },
+  "signals": [
+    {"id": "TITAN_RADAR_DISTANCE", "path": "Cruise control", "fmt": { "len": 16, "max": 6553.5, "div": 10, "unit": "meters" }, "name": "Radar distance"}
+  ]},
+{ "hdr": "723", "rax": "735", "cmd": {"22": "0108"}, "freq": 0.25, "dbgfilter": { "to": 2019, "years": [2022, 2023] },
+  "signals": [
+    {"id": "TITAN_RADAR_SPEED", "path": "Cruise control", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "metersPerSecond" }, "name": "Relative speed"}
+  ]},
+{ "hdr": "723", "rax": "735", "cmd": {"22": "0110"}, "freq": 0.25, "dbgfilter": { "to": 2019, "years": [2022, 2023] },
+  "signals": [
+    {"id": "TITAN_STEER_ANGLE", "path": "Control", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "degrees" }, "name": "Steering wheel angle", "description": "Negative values are clockwise, positive values are counter-clockwise."}
+  ]},
+{ "hdr": "740", "rax": "760", "cmd": {"22": "1115"}, "freq": 0.25, "dbgfilter": { "to": 2023 },
+  "signals": [
+    {"id": "TITAN_APP", "path": "Control", "fmt": { "len": 8, "max": 127.5, "div": 2, "unit": "percent" }, "name": "Accelerator pedal position"}
+  ]},
+{ "hdr": "740", "rax": "760", "cmd": {"22": "1209"}, "freq": 0.25, "dbgfilter": { "to": 2023 },
+  "signals": [
+    {"id": "TITAN_BRAKE_MC_P", "path": "Control", "fmt": { "len": 16, "max": 42666.015, "div": 1.536, "unit": "unknown" }, "name": "Brake master cylinder pressure"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E01"}, "freq": 30, "dbgfilter": { "to": 2019, "years": [2022, 2023] },
+  "signals": [
+    {"id": "TITAN_ODO", "path": "Trips", "fmt": { "len": 24, "max": 167772150, "mul": 10, "unit": "miles" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E25"}, "freq": 15, "dbgfilter": { "to": 2019, "years": [2022, 2023] },
+  "signals": [
+    {"id": "TITAN_TP_FR", "path": "Tires", "fmt": { "len": 8, "max": 127.5, "div": 2, "nullmin": 0, "unit": "psi" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E26"}, "freq": 15, "dbgfilter": { "to": 2019, "years": [2022, 2023] },
+  "signals": [
+    {"id": "TITAN_TP_FL", "path": "Tires", "fmt": { "len": 8, "max": 127.5, "div": 2, "nullmin": 0, "unit": "psi" }, "name": "Front left tire pressure", "suggestedMetric": "frontLeftTirePressure"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E27"}, "freq": 15, "dbgfilter": { "to": 2019, "years": [2022, 2023] },
+  "signals": [
+    {"id": "TITAN_TP_RR", "path": "Tires", "fmt": { "len": 8, "max": 127.5, "div": 2, "nullmin": 0, "unit": "psi" }, "name": "Rear right tire pressure", "suggestedMetric": "rearRightTirePressure"}
+  ]},
+{ "hdr": "743", "rax": "763", "fcm1": true, "cmd": {"22": "0E28"}, "freq": 15, "dbgfilter": { "to": 2019, "years": [2022, 2023] },
+  "signals": [
+    {"id": "TITAN_TP_RL", "path": "Tires", "fmt": { "len": 8, "max": 127.5, "div": 2, "nullmin": 0, "unit": "psi" }, "name": "Rear left tire pressure", "suggestedMetric": "rearLeftTirePressure"}
+  ]},
+{ "hdr": "744", "rax": "74C", "cmd": {"22": "4007"}, "freq": 5, "dbgfilter": { "to": 2023 },
+  "signals": [
+    {"id": "TITAN_AC_STATUS", "path": "Climate", "fmt": { "len": 8, "max": 255, "unit": "offon" }, "name": "Air conditioning status"}
+  ]},
+{ "hdr": "744", "rax": "74C", "cmd": {"22": "4008"}, "freq": 5, "dbgfilter": { "to": 2023 },
+  "signals": [
+    {"id": "TITAN_AAT", "path": "Climate", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Ambient air temperature"}
+  ]},
+{ "hdr": "744", "rax": "74C", "cmd": {"22": "F467"}, "freq": 5, "dbgfilter": { "to": 2023 },
+  "signals": [
+    {"id": "TITAN_ECT", "path": "Climate", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature", "suggestedMetric": "engineCoolantTemperature"}
+  ]},
+{ "hdr": "758", "rax": "778", "fcm1": true, "din": "C0", "dout": "81", "cmd": {"21": "10"}, "freq": 15, "dbgfilter": { "to": 2023 },
+  "signals": [
+    {"id": "TITAN_WHL_1_P", "path": "Tires", "fmt": {"bix": 16, "len": 8, "max": 127.5, "div": 2, "nullmin": 0, "unit": "psi" }, "name": "Wheel 1 pressure"},
+    {"id": "TITAN_WHL_2_P", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 127.5, "div": 2, "nullmin": 0, "unit": "psi" }, "name": "Wheel 2 pressure"},
+    {"id": "TITAN_WHL_3_P", "path": "Tires", "fmt": {"bix": 32, "len": 8, "max": 127.5, "div": 2, "nullmin": 0, "unit": "psi" }, "name": "Wheel 3 pressure"},
+    {"id": "TITAN_WHL_4_P", "path": "Tires", "fmt": {"bix": 40, "len": 8, "max": 127.5, "div": 2, "nullmin": 0, "unit": "psi" }, "name": "Wheel 4 pressure"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1124"}, "freq": 1,
+  "signals": [
+    {"id": "TITAN_F_RAT_ADJ_B2", "path": "Engine", "fmt": { "len": 8, "max": 155, "min": -100, "add": -100, "unit": "percent" }, "name": "Air/fuel ratio adjustment, bank 2"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1137"}, "freq": 1,
+  "signals": [
+    {"id": "TITAN_CAM_ADV_ANG_B2", "path": "Engine", "fmt": { "len": 8, "max": 63.5, "min": -64, "div": 2, "add": -64, "unit": "degrees" }, "name": "Camshaft advance angle, bank 2"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1139"}, "freq": 1,
+  "signals": [
+    {"id": "TITAN_CAM_VLV_DUTY_B2", "path": "Engine", "fmt": { "len": 8, "max": 99.6, "mul": 25, "div": 64, "unit": "percent" }, "name": "Camshaft valve duty, bank 2"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1205"}, "freq": 1,
+  "signals": [
+    {"id": "TITAN_MAF_V_B2", "path": "Engine", "fmt": { "len": 16, "max": 327, "div": 200, "unit": "volts" }, "name": "Mass air flow sensor voltage, bank 2"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1307"}, "freq": 1,
+  "signals": [
+    {"id": "TITAN_AC_COMP",        "path": "Engine", "fmt": {"bix": 1, "len": 1, "max": 1, "unit": "scalar" }, "name": "Air conditioning compressor"},
+    {"id": "TITAN_IDLE_CTRL_MODE", "path": "Engine", "fmt": {"bix": 6, "len": 1, "max": 1, "unit": "scalar" }, "name": "Idle control mode"}
+  ]},
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1313"}, "freq": 1,
+  "signals": [
+    {"id": "TITAN_COOLING_FAN_LOW",  "path": "Engine", "fmt": {"bix": 5, "len": 1, "max": 1, "unit": "scalar" }, "name": "Cooling fan low"},
+    {"id": "TITAN_COOLING_FAN_HIGH", "path": "Engine", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "scalar" }, "name": "Cooling fan high"}
+  ]}
 ]
 }
