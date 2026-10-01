@@ -1,8 +1,8 @@
 command_id: 743.763.220E25|fc=1
 test_cases:
 - expected_values:
-    TITAN_TP_FR: 32.5
-  response: '76304620E2541'
+    TITAN_TP_FR: null
+  response: '76304620E2500'
 - expected_values:
     TITAN_TP_FR: 40
   response: '76304620E2550'
