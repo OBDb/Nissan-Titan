@@ -1,0 +1,8 @@
+command_id: 7E0.7E8.221124
+test_cases:
+- expected_values:
+    TITAN_F_RAT_ADJ_B2: -8
+  response: 7E8046211245C
+- expected_values:
+    TITAN_F_RAT_ADJ_B2: 11
+  response: 7E8046211246F
