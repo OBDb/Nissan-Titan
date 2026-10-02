@@ -1,0 +1,8 @@
+command_id: 744.764.224008
+test_cases:
+- expected_values:
+    TITAN_AAT: -30
+  response: 764046240080A
+- expected_values:
+    TITAN_AAT: 55
+  response: 764046240085F

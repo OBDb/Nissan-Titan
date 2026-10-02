@@ -51,17 +51,17 @@
   "signals": [
     {"id": "TITAN_TP_RL", "path": "Tires", "fmt": { "len": 8, "max": 127.5, "div": 2, "nullmin": 0, "unit": "psi" }, "name": "Rear left tire pressure", "suggestedMetric": "rearLeftTirePressure"}
   ]},
-{ "hdr": "744", "rax": "74C", "cmd": {"22": "4007"}, "freq": 5, "dbgfilter": { "to": 2023 },
+{ "hdr": "744", "rax": "764", "cmd": {"22": "4007"}, "freq": 5, "dbgfilter": { "to": 2023 },
   "signals": [
-    {"id": "TITAN_AC_STATUS", "path": "Climate", "fmt": { "len": 8, "max": 255, "unit": "offon" }, "name": "Air conditioning status"}
+    {"id": "TITAN_AC_STATUS", "path": "Climate", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Air conditioning status code"}
   ]},
-{ "hdr": "744", "rax": "74C", "cmd": {"22": "4008"}, "freq": 5, "dbgfilter": { "to": 2023 },
+{ "hdr": "744", "rax": "764", "cmd": {"22": "4008"}, "freq": 5, "dbgfilter": { "to": 2023 },
   "signals": [
     {"id": "TITAN_AAT", "path": "Climate", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Ambient air temperature"}
   ]},
-{ "hdr": "744", "rax": "74C", "cmd": {"22": "F467"}, "freq": 5, "dbgfilter": { "to": 2023 },
+{ "hdr": "744", "rax": "764", "cmd": {"22": "F467"}, "freq": 5, "dbgfilter": { "to": 2023 },
   "signals": [
-    {"id": "TITAN_ECT", "path": "Climate", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature", "suggestedMetric": "engineCoolantTemperature"}
+    {"id": "TITAN_ECT", "path": "Climate", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Engine coolant temperature", "suggestedMetric": "engineCoolantTemperature"}
   ]},
 { "hdr": "758", "rax": "778", "fcm1": true, "din": "C0", "dout": "81", "cmd": {"21": "10"}, "freq": 15, "dbgfilter": { "to": 2023 },
   "signals": [
