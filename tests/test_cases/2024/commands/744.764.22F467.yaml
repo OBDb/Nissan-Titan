@@ -1,0 +1,14 @@
+command_id: 744.764.22F467
+test_cases:
+- expected_values:
+    TITAN_ECT: null
+  response: 7640462F46700
+- expected_values:
+    TITAN_ECT: 81
+  response: |-
+    7640462F46779
+    7520319020C
+    77203590209
+- expected_values:
+    TITAN_ECT: 102
+  response: 7640462F4678E

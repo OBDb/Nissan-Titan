@@ -1,0 +1,11 @@
+command_id: 744.764.224007
+test_cases:
+- expected_values:
+    TITAN_AC_STATUS: 11
+  response: 764076240070BFDFFFF
+- expected_values:
+    TITAN_AC_STATUS: 155
+  response: 764076240079BFFFFFF
+- expected_values:
+    TITAN_AC_STATUS: 187
+  response: 76407624007BBFDFFFF
