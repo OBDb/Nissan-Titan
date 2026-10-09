@@ -47,15 +47,6 @@ test_cases:
     778223636FFFFFFFFFF
 - expected_values:
     TITAN_WHL_1_P: 38
-    TITAN_WHL_2_P: 37.5
-    TITAN_WHL_3_P: 39
-    TITAN_WHL_4_P: 38
-  response: |-
-    778100F611000004C4B
-    778214E4CF87F003636
-    778223636FFFFFFFFFF
-- expected_values:
-    TITAN_WHL_1_P: 38
     TITAN_WHL_2_P: 38
     TITAN_WHL_3_P: 39
     TITAN_WHL_4_P: 38
@@ -80,6 +71,15 @@ test_cases:
   response: |-
     778100F611029044B49
     778214B4AF84A003636
+    778223636FFFFFFFFFF
+- expected_values:
+    TITAN_WHL_1_P: 38.5
+    TITAN_WHL_2_P: 38
+    TITAN_WHL_3_P: 38
+    TITAN_WHL_4_P: 39
+  response: |-
+    778100F61102FA84D4C
+    778214C4EF855003636
     778223636FFFFFFFFFF
 - expected_values:
     TITAN_WHL_1_P: 38
