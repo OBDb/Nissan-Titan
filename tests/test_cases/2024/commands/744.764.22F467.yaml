@@ -4,6 +4,9 @@ test_cases:
     TITAN_ECT: null
   response: 7640462F46700
 - expected_values:
+    TITAN_ECT: 16
+  response: 7640462F46738
+- expected_values:
     TITAN_ECT: 81
   response: |-
     7640462F46779
