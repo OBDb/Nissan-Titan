@@ -7,5 +7,5 @@ test_cases:
     TITAN_TP_RR: 32
   response: '76304620E2740'
 - expected_values:
-    TITAN_TP_RR: 41
-  response: '76304620E2752'
+    TITAN_TP_RR: 41.5
+  response: '76304620E2753'
